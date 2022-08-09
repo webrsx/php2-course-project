@@ -1,9 +1,9 @@
 {
-    "name": "vendor/webrsx",
-    "description": "course project of php2",
+    "name": "skarsx/course.project",
+    "description": "couse project php2 geekbrains start 10.08.2022",
     "autoload": {
         "psr-4": {
-            "Vendor\\Webrsx\\": "src/"
+            "Skarsx\\CourseProject\\": "src/"
         }
     },
     "authors": [
@@ -12,8 +12,5 @@
             "email": "skarsx@yandex.ru"
         }
     ],
-    "require": {
-        "fakerphp/faker": "^1.20",
-        "roave/security-advisories": "dev-latest"
-    }
+    "require": {}
 }

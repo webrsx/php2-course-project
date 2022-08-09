@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+require 'src/user/user.php';
+use skarsx\courseproject\User\User;
+$user = new User(1);
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +14,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>hello world</p>
+    <p>user id: <?= $user->getId();?></p>
 </body>
 </html>
