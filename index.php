@@ -14,11 +14,24 @@ switch($argv[1]){
     break;
 
     case "post":
-        echo new Post($faker->randomDigit(), $faker->randomDigit(), $faker->realText($faker->numberBetween(20, 30)), $faker->realText($faker->numberBetween(100, 150)));
+        echo new Post(
+        $faker->randomDigit(),
+        $faker->randomDigit(),
+        $faker->realText($faker->numberBetween(20, 30)), 
+        $faker->realText($faker->numberBetween(100, 150)));
     break;
 
     case "comment":
-        echo new Comment($faker->randomDigit(),$faker->randomDigit(),$faker->randomDigit(),$faker->realText($faker->numberBetween(50, 100)));
+        echo new Comment(
+        $faker->randomDigit(),
+        $faker->randomDigit(),
+        $faker->randomDigit(),
+        $faker->realText($faker->numberBetween(50, 100)));
     break;
+
+    $connection = new PDO('sqlite:' . __DIR__ . '/blog.sqlite');
+    $connection->exec(
+    "INSERT INTO table_name (first_name, last_namee) VALUES ('jenya', 'koshkin')"
+);
 }
 ?>

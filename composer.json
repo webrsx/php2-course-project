@@ -12,5 +12,9 @@
             "email": "skarsx@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "roave/security-advisories": "dev-latest",
+        "fakerphp/faker": "^1.20",
+        "ext-pdo": "*"
+    }
 }
