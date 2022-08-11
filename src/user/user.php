@@ -1,8 +1,16 @@
 <?php
+	namespace Skarsx\courseproject\User;
+
 	class User
 	{
-		__construct{
-		$name = "serega";
+		private ?int $id;
+		public function __construct($id)
+		{
+			$this->id = $id;
+		}
+		public function getId(){
+			echo $this->id;
 		}
 	}
 ?>
+//123

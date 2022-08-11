@@ -1,0 +1,16 @@
+{
+    "name": "skarsx/course.project",
+    "description": "couse project php2 geekbrains start 10.08.2022",
+    "autoload": {
+        "psr-4": {
+            "Skarsx\\CourseProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "skarsx",
+            "email": "skarsx@yandex.ru"
+        }
+    ],
+    "require": {}
+}
