@@ -12,5 +12,7 @@
             "email": "skarsx@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "fakerphp/faker": "^1.20"
+    }
 }

@@ -5,9 +5,9 @@ namespace Skarsx\CourseProject\Blog;
     class Comment
     {
         public function __construct(
-        private int $id,
-        private int $userId,
-        private int $articleId,
+        private string $uuid,
+        private string $post_uuid,
+        private string $author_uuid,
         private string $text)
         {}
 

@@ -4,10 +4,10 @@
     class Post
     {
      public function __construct(
-         private ?int $id = null,
-         private ?int $userId = null,
-         private ?string $header,
-         private ?string $text)
+         private string $uuid,
+         private string $author_uuid,
+         private string $title,
+         private string $text)
      {}
 
      public function __toString()
