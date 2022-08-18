@@ -15,4 +15,3 @@ namespace Skarsx\CourseProject\Blog;
             return $this->text . PHP_EOL;
         }
     }
-?>
