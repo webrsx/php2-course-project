@@ -12,7 +12,7 @@
 			private string $last_name)
 			{}
 		
-		public function getUuid(){
+		public function getUUID(){
 			return $this->uuid;
 		}
 

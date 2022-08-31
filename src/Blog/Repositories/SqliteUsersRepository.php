@@ -3,14 +3,13 @@
 namespace Skarsx\CourseProject\Blog\Repositories;
 
 use PDO;
-use Skarsx\CourseProject\Blog\Interfaces\SqliteUsersRepositoryInterface;
 use Skarsx\CourseProject\User\User;
 use Skarsx\CourseProject\Blog\UUID;
 use Skarsx\CourseProject\Blog\Interfaces\UsersRepositoryInterface;
 use Skarsx\CourseProject\Blog\Exceptions\InvalidArgumentException;
 use Skarsx\CourseProject\Blog\Exceptions\UserNotFoundException;
 
-class SqliteUsersRepository 
+class SqliteUsersRepository implements UsersRepositoryInterface
 {
     public function __construct(
         private PDO $connection
@@ -68,7 +67,7 @@ class SqliteUsersRepository
                     $result['last_name']
                 );
             }
-    public function getByUsername(string $username): User
+     public function getByUsername(string $username)
     {
         $statement = $this->connection->prepare('SELECT * FROM users WHERE username == :username');
 
